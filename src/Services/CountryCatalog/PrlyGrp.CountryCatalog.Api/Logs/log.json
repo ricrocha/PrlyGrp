@@ -1,0 +1,2 @@
+{"Timestamp":"2020-03-01T16:31:35.5489132-05:00","Level":"Information","MessageTemplate":"Configuring web host ({ApplicationContext})...","Properties":{"ApplicationContext":"CountryCatalog.Api","MachineName":"DESKTOP-MOIFU72","ProcessId":24676,"ThreadId":1}}
+{"Timestamp":"2020-03-01T16:31:37.0948045-05:00","Level":"Information","MessageTemplate":"Starting web host ({ApplicationContext})...","Properties":{"ApplicationContext":"CountryCatalog.Api","MachineName":"DESKTOP-MOIFU72","ProcessId":24676,"ThreadId":1}}
