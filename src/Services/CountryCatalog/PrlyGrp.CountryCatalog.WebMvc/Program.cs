@@ -63,9 +63,7 @@ namespace PrlyGrp.CountryCatalog.WebMvc
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddEnvironmentVariables();
-
             var config = builder.Build();
-
             if (config.GetValue<bool>("UseVault", false))
             {
                 builder.AddAzureKeyVault(
@@ -73,9 +71,7 @@ namespace PrlyGrp.CountryCatalog.WebMvc
                     config["Vault:ClientId"],
                     config["Vault:ClientSecret"]);
             }
-
             return builder.Build();
         }
-
     }
 }
