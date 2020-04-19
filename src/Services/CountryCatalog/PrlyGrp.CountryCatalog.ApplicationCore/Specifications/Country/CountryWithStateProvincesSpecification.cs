@@ -1,7 +1,4 @@
 ﻿using PrlyGrp.CountryCatalog.ApplicationCore.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PrlyGrp.CountryCatalog.ApplicationCore.Specifications
 {

@@ -1,3 +1,4 @@
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -40,14 +41,26 @@ namespace PrlyGrp.CountryCatalog.Api
         public static IHostBuilder CreateHostBuilder(IConfiguration configuration, string[] args)
         {
             return Host.CreateDefaultBuilder(args)
+                .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                 .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseConfiguration(configuration);
                     webBuilder.CaptureStartupErrors(false);
+                    //webBuilder.ConfigureKestrel(options =>
+                    //{
+                    //    var ports = GetDefinedPorts(configuration);
+                    //    options.Listen(IPAddress.Any, ports.httpPort, listenOptions =>
+                    //    {
+                    //        listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+                    //    });
+                    //    options.Listen(IPAddress.Any, ports.grpcPort, listenOptions =>
+                    //    {
+                    //        listenOptions.Protocols = HttpProtocols.Http2;
+                    //    });
+                    //});
                     webBuilder.UseStartup<Startup>();
                     webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
-
                 });
         }
 
@@ -58,15 +71,20 @@ namespace PrlyGrp.CountryCatalog.Api
                 .CreateLogger();                
         }
 
+        private static (int httpPort, int grpcPort) GetDefinedPorts(IConfiguration configuration)
+        {
+            var grpcPort = configuration.GetValue("GRPC_PORT", 81);
+            var port = configuration.GetValue("PORT", 80);
+            return (port, grpcPort);
+        }
+
         private static IConfiguration GetConfiguration()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddEnvironmentVariables();
-
             var config = builder.Build();
-
             if (config.GetValue<bool>("UseVault", false))
             {
                 builder.AddAzureKeyVault(
@@ -74,7 +92,6 @@ namespace PrlyGrp.CountryCatalog.Api
                     config["Vault:ClientId"],
                     config["Vault:ClientSecret"]);
             }
-
             return builder.Build();
         }
     }
