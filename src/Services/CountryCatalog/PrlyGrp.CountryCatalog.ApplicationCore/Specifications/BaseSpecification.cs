@@ -27,13 +27,11 @@ namespace PrlyGrp.CountryCatalog.ApplicationCore.Specifications
         {
             Includes.Add(includeExpression);
         }
-
         protected virtual void AddIncludes<TProperty>(Func<IncludeAggregator<T>, IIncludeQuery<T, TProperty>> includeGenerator)
         {
             var includeQuery = includeGenerator(new IncludeAggregator<T>());
             IncludeStrings.AddRange(includeQuery.Paths);
         }
-
         protected virtual void AddInclude(string includeString)
         {
             IncludeStrings.Add(includeString);
@@ -58,6 +56,5 @@ namespace PrlyGrp.CountryCatalog.ApplicationCore.Specifications
         {
             GroupBy = groupByExpression;
         }
-
     }
 }

@@ -1,5 +1,3 @@
-using System;
-
 namespace PrlyGrp.CountryCatalog.WebMvc.Models
 {
     public class ErrorViewModel

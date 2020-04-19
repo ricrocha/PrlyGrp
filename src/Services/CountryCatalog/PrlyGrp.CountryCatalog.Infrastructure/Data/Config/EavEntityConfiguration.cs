@@ -4,19 +4,13 @@ using PrlyGrp.CountryCatalog.ApplicationCore.Entities;
 
 namespace PrlyGrp.CountryCatalog.Infrastructure.Data.Config
 {
-    public class CountryConfiguration : IEntityTypeConfiguration<Country>
+    public class EavEntityConfiguration : IEntityTypeConfiguration<EavEntity>
     {
-        public void Configure(EntityTypeBuilder<Country> builder)
+        public void Configure(EntityTypeBuilder<EavEntity> builder)
         {
-            builder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
-
             builder.Property(e => e.ChangedBy)
                 .IsRequired()
                 .HasMaxLength(50);
-
-            builder.Property(e => e.Code)
-                .IsRequired()
-                .HasMaxLength(20);
 
             builder.Property(e => e.CreatedBy)
                 .IsRequired()

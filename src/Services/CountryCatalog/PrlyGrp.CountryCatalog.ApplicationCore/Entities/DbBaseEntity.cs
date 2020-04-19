@@ -14,4 +14,9 @@ namespace PrlyGrp.CountryCatalog.ApplicationCore.Entities
         public DateTimeOffset? DeletedOn { get; set; }
         public string DeletedBy { get; set; }
     }
+
+    public class DbBaseEntity<T>
+    {
+        public T Id { get; set; }
+    }
 }

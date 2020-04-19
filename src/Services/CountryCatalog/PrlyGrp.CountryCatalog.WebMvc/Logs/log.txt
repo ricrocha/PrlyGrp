@@ -1,9 +1,0 @@
-03/01/2020 20:31:44 Configuring web host ("CountryCatalog.WebMvc")...
-03/01/2020 20:31:51 Starting web host ("CountryCatalog.WebMvc")...
-03/01/2020 20:31:56 HTTP "GET" "/" responded 200 in 276.8999 ms
-03/01/2020 20:31:58 HTTP "GET" "/Home/Privacy" responded 200 in 13.4896 ms
-03/01/2020 20:31:59 HTTP "GET" "/" responded 200 in 2.8669 ms
-03/01/2020 20:32:03 HTTP "GET" "/" responded 200 in 7.2354 ms
-03/01/2020 20:32:04 HTTP "GET" "/Home/Privacy" responded 200 in 4.2569 ms
-03/01/2020 20:32:07 HTTP "GET" "/" responded 200 in 4.7019 ms
-03/01/2020 20:32:10 HTTP "GET" "/Home/Privacy" responded 200 in 2.7390 ms
