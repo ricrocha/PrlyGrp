@@ -1,10 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PrlyGrp.CountryCatalog.ApplicationCore.Entities;
 using PrlyGrp.CountryCatalog.ApplicationCore.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PrlyGrp.CountryCatalog.Infrastructure.Data

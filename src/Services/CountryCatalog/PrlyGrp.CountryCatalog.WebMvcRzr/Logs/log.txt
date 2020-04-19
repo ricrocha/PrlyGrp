@@ -440,3 +440,161 @@ System.Exception: This is our demo exception
 System.Exception: This is our demo exception
    at PrlyGrp.CountryCatalog.WebMvcRzr.Pages.IndexModel.OnGet() in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Pages\Index.cshtml.cs:line 33
 03/01/2020 14:38:34 HTTP "GET" "/" responded 200 in 155.4889 ms
+03/20/2020 22:55:41 Configuring web host ("CountryCatalog.WebMvcRzr")...
+03/20/2020 22:55:47 Program terminated unexpectedly ("CountryCatalog.WebMvcRzr")...
+System.NotSupportedException: ConfigureServices returning an System.IServiceProvider isn't supported.
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PrlyGrp.CountryCatalog.WebMvcRzr.Program.Main(String[] args) in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Program.cs:line 23
+03/20/2020 22:56:14 Configuring web host ("CountryCatalog.WebMvcRzr")...
+03/20/2020 22:56:15 Program terminated unexpectedly ("CountryCatalog.WebMvcRzr")...
+System.NotSupportedException: ConfigureServices returning an System.IServiceProvider isn't supported.
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PrlyGrp.CountryCatalog.WebMvcRzr.Program.Main(String[] args) in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Program.cs:line 23
+03/20/2020 22:56:54 Configuring web host ("CountryCatalog.WebMvcRzr")...
+03/20/2020 22:56:56 Program terminated unexpectedly ("CountryCatalog.WebMvcRzr")...
+System.NotSupportedException: ConfigureServices returning an System.IServiceProvider isn't supported.
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PrlyGrp.CountryCatalog.WebMvcRzr.Program.Main(String[] args) in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Program.cs:line 23
+04/17/2020 20:49:01 Configuring web host ("CountryCatalog.WebMvcRzr")...
+04/17/2020 20:49:03 Program terminated unexpectedly ("CountryCatalog.WebMvcRzr")...
+System.NotSupportedException: ConfigureServices returning an System.IServiceProvider isn't supported.
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PrlyGrp.CountryCatalog.WebMvcRzr.Program.Main(String[] args) in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Program.cs:line 23
+04/17/2020 22:04:42 Configuring web host ("CountryCatalog.WebMvcRzr")...
+04/17/2020 22:04:49 Starting web host("CountryCatalog.WebMvcRzr")...
+04/17/2020 22:04:52 You requested the index page.
+04/17/2020 22:04:52 The value of i is 0
+04/17/2020 22:04:52 The value of i is 1
+04/17/2020 22:04:52 The value of i is 2
+04/17/2020 22:04:52 The value of i is 3
+04/17/2020 22:04:52 The value of i is 4
+04/17/2020 22:04:52 The value of i is 5
+04/17/2020 22:04:52 The value of i is 6
+04/17/2020 22:04:52 The value of i is 7
+04/17/2020 22:04:52 The value of i is 8
+04/17/2020 22:04:52 The value of i is 9
+04/17/2020 22:04:52 The value of i is 10
+04/17/2020 22:04:52 The value of i is 11
+04/17/2020 22:04:52 The value of i is 12
+04/17/2020 22:04:52 The value of i is 13
+04/17/2020 22:04:52 The value of i is 14
+04/17/2020 22:04:52 The value of i is 15
+04/17/2020 22:04:52 The value of i is 16
+04/17/2020 22:04:52 The value of i is 17
+04/17/2020 22:04:52 The value of i is 18
+04/17/2020 22:04:52 The value of i is 19
+04/17/2020 22:04:52 The value of i is 20
+04/17/2020 22:04:52 The value of i is 21
+04/17/2020 22:04:52 The value of i is 22
+04/17/2020 22:04:52 The value of i is 23
+04/17/2020 22:04:52 The value of i is 24
+04/17/2020 22:04:52 The value of i is 25
+04/17/2020 22:04:52 The value of i is 26
+04/17/2020 22:04:52 The value of i is 27
+04/17/2020 22:04:52 The value of i is 28
+04/17/2020 22:04:52 The value of i is 29
+04/17/2020 22:04:52 The value of i is 30
+04/17/2020 22:04:52 The value of i is 31
+04/17/2020 22:04:52 The value of i is 32
+04/17/2020 22:04:52 The value of i is 33
+04/17/2020 22:04:52 The value of i is 34
+04/17/2020 22:04:52 The value of i is 35
+04/17/2020 22:04:52 The value of i is 36
+04/17/2020 22:04:52 The value of i is 37
+04/17/2020 22:04:52 The value of i is 38
+04/17/2020 22:04:52 The value of i is 39
+04/17/2020 22:04:52 The value of i is 40
+04/17/2020 22:04:52 The value of i is 41
+04/17/2020 22:04:52 The value of i is 42
+04/17/2020 22:04:52 The value of i is 43
+04/17/2020 22:04:52 The value of i is 44
+04/17/2020 22:04:52 The value of i is 45
+04/17/2020 22:04:52 The value of i is 46
+04/17/2020 22:04:52 The value of i is 47
+04/17/2020 22:04:52 The value of i is 48
+04/17/2020 22:04:52 The value of i is 49
+04/17/2020 22:04:52 The value of i is 50
+04/17/2020 22:04:52 The value of i is 51
+04/17/2020 22:04:52 The value of i is 52
+04/17/2020 22:04:52 The value of i is 53
+04/17/2020 22:04:52 The value of i is 54
+04/17/2020 22:04:52 The value of i is 55
+04/17/2020 22:04:52 We caught this exepction in the index get call
+System.Exception: This is our demo exception
+   at PrlyGrp.CountryCatalog.WebMvcRzr.Pages.IndexModel.OnGet() in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Pages\Index.cshtml.cs:line 33
+04/17/2020 22:04:53 HTTP "GET" "/" responded 200 in 867.4624 ms
+04/17/2020 22:05:00 HTTP "GET" "/Privacy" responded 200 in 20.4795 ms
+04/17/2020 22:05:02 You requested the index page.
+04/17/2020 22:05:02 The value of i is 0
+04/17/2020 22:05:02 The value of i is 1
+04/17/2020 22:05:02 The value of i is 2
+04/17/2020 22:05:02 The value of i is 3
+04/17/2020 22:05:02 The value of i is 4
+04/17/2020 22:05:02 The value of i is 5
+04/17/2020 22:05:02 The value of i is 6
+04/17/2020 22:05:02 The value of i is 7
+04/17/2020 22:05:02 The value of i is 8
+04/17/2020 22:05:02 The value of i is 9
+04/17/2020 22:05:02 The value of i is 10
+04/17/2020 22:05:02 The value of i is 11
+04/17/2020 22:05:02 The value of i is 12
+04/17/2020 22:05:02 The value of i is 13
+04/17/2020 22:05:02 The value of i is 14
+04/17/2020 22:05:02 The value of i is 15
+04/17/2020 22:05:02 The value of i is 16
+04/17/2020 22:05:02 The value of i is 17
+04/17/2020 22:05:02 The value of i is 18
+04/17/2020 22:05:02 The value of i is 19
+04/17/2020 22:05:02 The value of i is 20
+04/17/2020 22:05:02 The value of i is 21
+04/17/2020 22:05:02 The value of i is 22
+04/17/2020 22:05:02 The value of i is 23
+04/17/2020 22:05:02 The value of i is 24
+04/17/2020 22:05:02 The value of i is 25
+04/17/2020 22:05:02 The value of i is 26
+04/17/2020 22:05:02 The value of i is 27
+04/17/2020 22:05:02 The value of i is 28
+04/17/2020 22:05:02 The value of i is 29
+04/17/2020 22:05:02 The value of i is 30
+04/17/2020 22:05:02 The value of i is 31
+04/17/2020 22:05:02 The value of i is 32
+04/17/2020 22:05:02 The value of i is 33
+04/17/2020 22:05:02 The value of i is 34
+04/17/2020 22:05:02 The value of i is 35
+04/17/2020 22:05:02 The value of i is 36
+04/17/2020 22:05:02 The value of i is 37
+04/17/2020 22:05:02 The value of i is 38
+04/17/2020 22:05:02 The value of i is 39
+04/17/2020 22:05:02 The value of i is 40
+04/17/2020 22:05:02 The value of i is 41
+04/17/2020 22:05:02 The value of i is 42
+04/17/2020 22:05:02 The value of i is 43
+04/17/2020 22:05:02 The value of i is 44
+04/17/2020 22:05:02 The value of i is 45
+04/17/2020 22:05:02 The value of i is 46
+04/17/2020 22:05:02 The value of i is 47
+04/17/2020 22:05:02 The value of i is 48
+04/17/2020 22:05:02 The value of i is 49
+04/17/2020 22:05:02 The value of i is 50
+04/17/2020 22:05:02 The value of i is 51
+04/17/2020 22:05:02 The value of i is 52
+04/17/2020 22:05:02 The value of i is 53
+04/17/2020 22:05:02 The value of i is 54
+04/17/2020 22:05:02 The value of i is 55
+04/17/2020 22:05:02 We caught this exepction in the index get call
+System.Exception: This is our demo exception
+   at PrlyGrp.CountryCatalog.WebMvcRzr.Pages.IndexModel.OnGet() in C:\VS\pGroup\PrlyGrp\src\Services\CountryCatalog\PrlyGrp.CountryCatalog.WebMvcRzr\Pages\Index.cshtml.cs:line 33
+04/17/2020 22:05:02 HTTP "GET" "/" responded 200 in 143.1446 ms
+04/17/2020 22:05:04 HTTP "GET" "/Privacy" responded 200 in 7.2137 ms

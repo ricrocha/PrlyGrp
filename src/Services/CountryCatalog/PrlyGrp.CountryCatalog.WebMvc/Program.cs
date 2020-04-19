@@ -1,3 +1,4 @@
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -14,7 +15,7 @@ namespace PrlyGrp.CountryCatalog.WebMvc
 
         public static int Main(string[] args)
         {
-            var configuration = GetConfiration();
+            var configuration = GetConfiguration();
             Log.Logger = CreateSerilogLogger(configuration);
 
             try
@@ -40,6 +41,7 @@ namespace PrlyGrp.CountryCatalog.WebMvc
         public static IHostBuilder CreateHostBuilder(IConfiguration configuration, string[] args)
         {
             return Host.CreateDefaultBuilder(args)
+                .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                 .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
@@ -57,7 +59,7 @@ namespace PrlyGrp.CountryCatalog.WebMvc
                 .CreateLogger();
         }
 
-        private static IConfiguration GetConfiration()
+        private static IConfiguration GetConfiguration()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

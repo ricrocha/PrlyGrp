@@ -1,4 +1,3 @@
-using System;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
@@ -20,7 +19,7 @@ namespace PrlyGrp.CountryCatalog.WebMvc
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public IServiceProvider ConfigureServices(IServiceCollection services) //void
+        public void ConfigureServices(IServiceCollection services) //void
         {
             //services.AddApplicationInsightsTelemetry();            
             services.AddControllersWithViews();
@@ -28,7 +27,15 @@ namespace PrlyGrp.CountryCatalog.WebMvc
             var container = new ContainerBuilder();
             container.Populate(services);
 
-            return new AutofacServiceProvider(container.Build());
+            //return new AutofacServiceProvider(container.Build());
+        }
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            //configure auto fac here
+            //builder.AddService();
+
+            //...
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
